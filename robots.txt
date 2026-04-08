@@ -1,0 +1,10 @@
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# Netlify internal paths (never crawl these)
+Disallow: /.netlify/
+Disallow: /admin/
+
+# Sitemap location (recommended for SEO)
+Sitemap: https://24hourelectricianflorencesc.com/sitemap.xml
