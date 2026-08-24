@@ -907,6 +907,65 @@
         if(floatBtn) {
             floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
         }
+
+        // ========== FAQ JAVASCRIPT (auto-close) ==========
+    (function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        function closeAllExcept(activeItem) {
+            faqItems.forEach(item => {
+                if (item !== activeItem) {
+                    item.classList.remove('active');
+                    const btn = item.querySelector('.faq-question');
+                    if (btn) btn.setAttribute('aria-expanded', 'false');
+                    const icon = item.querySelector('.faq-icon');
+                    if (icon) icon.textContent = '+';
+                }
+            });
+        }
+
+        faqItems.forEach(item => {
+            const questionBtn = item.querySelector('.faq-question');
+            const iconSpan = item.querySelector('.faq-icon');
+
+            if (questionBtn) {
+                questionBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+
+                    if (item.classList.contains('active')) {
+                        item.classList.remove('active');
+                        questionBtn.setAttribute('aria-expanded', 'false');
+                        if (iconSpan) iconSpan.textContent = '+';
+                        return;
+                    }
+
+                    closeAllExcept(item);
+
+                    item.classList.add('active');
+                    questionBtn.setAttribute('aria-expanded', 'true');
+                    if (iconSpan) iconSpan.textContent = '−';
+                });
+            }
+        });
+    })();
+</script>
+📍 Exact location in your code
+Apne code ke end mein yeh section hai:
+
+html
+    <script>
+        // smooth click for floating button
+        const floatBtn = document.querySelector('.floating-call a');
+        if(floatBtn) {
+            floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
+        }
+    </script>
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        ...
+    }
     </script>
 
     <!-- Schema Markup -->
