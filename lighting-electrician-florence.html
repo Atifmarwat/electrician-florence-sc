@@ -908,8 +908,8 @@
             floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
         }
 
-        // ========== FAQ JAVASCRIPT (auto-close) ==========
-    (function() {
+       // ========== FAQ JAVASCRIPT (FIXED) ==========
+    document.addEventListener('DOMContentLoaded', function() {
         const faqItems = document.querySelectorAll('.faq-item');
 
         function closeAllExcept(activeItem) {
@@ -932,6 +932,7 @@
                 questionBtn.addEventListener('click', function(e) {
                     e.stopPropagation();
 
+                    // Agar yeh already active hai toh close karein
                     if (item.classList.contains('active')) {
                         item.classList.remove('active');
                         questionBtn.setAttribute('aria-expanded', 'false');
@@ -939,15 +940,17 @@
                         return;
                     }
 
+                    // Baaki sab close karein
                     closeAllExcept(item);
 
+                    // Yeh open karein
                     item.classList.add('active');
                     questionBtn.setAttribute('aria-expanded', 'true');
                     if (iconSpan) iconSpan.textContent = '−';
                 });
             }
         });
-    })();
+    });
 </script>
 📍 Exact location in your code
 Apne code ke end mein yeh section hai:
