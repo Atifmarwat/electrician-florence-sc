@@ -908,7 +908,14 @@
             floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
         }
 
-       // ========== FAQ JAVASCRIPT (FIXED) ==========
+  <script>
+    // smooth click for floating button
+    const floatBtn = document.querySelector('.floating-call a');
+    if(floatBtn) {
+        floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
+    }
+
+    // ========== FAQ JAVASCRIPT (FIXED) ==========
     document.addEventListener('DOMContentLoaded', function() {
         const faqItems = document.querySelectorAll('.faq-item');
 
