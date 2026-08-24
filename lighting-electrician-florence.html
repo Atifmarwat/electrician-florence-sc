@@ -580,6 +580,19 @@
     }
 }
         }
+
+        /* ===== FAQ ACTIVE STATE FIX ===== */
+.faq-item.active .faq-answer {
+    max-height: 320px !important;
+    opacity: 1 !important;
+    padding: 0.8rem 0.2rem 0.6rem 0.2rem !important;
+}
+
+.faq-item.active .faq-icon {
+    background: #2f4170 !important;
+    color: #ffffff !important;
+    transform: rotate(45deg) !important;
+}
     </style>
 </head>
 <body>
@@ -897,86 +910,9 @@
         </div>
     </footer>
 
-    <div class="floating-call">
+     <div class="floating-call">
         <a href="tel:+18436284022" class="call-btn" style="text-decoration:none;"><span style="font-size:32px;">📞</span></a>
     </div>
-
-    <script>
-        // smooth click for floating button
-        const floatBtn = document.querySelector('.floating-call a');
-        if(floatBtn) {
-            floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
-        }
-
-  <script>
-    // smooth click for floating button
-    const floatBtn = document.querySelector('.floating-call a');
-    if(floatBtn) {
-        floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
-    }
-
-    // ========== FAQ JAVASCRIPT (FIXED) ==========
-    document.addEventListener('DOMContentLoaded', function() {
-        const faqItems = document.querySelectorAll('.faq-item');
-
-        function closeAllExcept(activeItem) {
-            faqItems.forEach(item => {
-                if (item !== activeItem) {
-                    item.classList.remove('active');
-                    const btn = item.querySelector('.faq-question');
-                    if (btn) btn.setAttribute('aria-expanded', 'false');
-                    const icon = item.querySelector('.faq-icon');
-                    if (icon) icon.textContent = '+';
-                }
-            });
-        }
-
-        faqItems.forEach(item => {
-            const questionBtn = item.querySelector('.faq-question');
-            const iconSpan = item.querySelector('.faq-icon');
-
-            if (questionBtn) {
-                questionBtn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-
-                    // Agar yeh already active hai toh close karein
-                    if (item.classList.contains('active')) {
-                        item.classList.remove('active');
-                        questionBtn.setAttribute('aria-expanded', 'false');
-                        if (iconSpan) iconSpan.textContent = '+';
-                        return;
-                    }
-
-                    // Baaki sab close karein
-                    closeAllExcept(item);
-
-                    // Yeh open karein
-                    item.classList.add('active');
-                    questionBtn.setAttribute('aria-expanded', 'true');
-                    if (iconSpan) iconSpan.textContent = '−';
-                });
-            }
-        });
-    });
-</script>
-📍 Exact location in your code
-Apne code ke end mein yeh section hai:
-
-html
-    <script>
-        // smooth click for floating button
-        const floatBtn = document.querySelector('.floating-call a');
-        if(floatBtn) {
-            floatBtn.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
-        }
-    </script>
-
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-        ...
-    }
-    </script>
 
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -1001,6 +937,59 @@ html
             "closes": "23:59"
         }
     }
+    </script>
+
+    <!-- ========== JAVASCRIPT (FLOATING BUTTON + FAQ) ========== -->
+    <script>
+        // Floating call button
+        const floatBtn = document.querySelector('.floating-call a');
+        if(floatBtn) {
+            floatBtn.addEventListener('click', (e) => { 
+                e.preventDefault(); 
+                window.location.href = 'tel:+18436284022'; 
+            });
+        }
+
+        // ========== FAQ JAVASCRIPT (auto-close) ==========
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            function closeAllExcept(activeItem) {
+                faqItems.forEach(item => {
+                    if (item !== activeItem) {
+                        item.classList.remove('active');
+                        const btn = item.querySelector('.faq-question');
+                        if (btn) btn.setAttribute('aria-expanded', 'false');
+                        const icon = item.querySelector('.faq-icon');
+                        if (icon) icon.textContent = '+';
+                    }
+                });
+            }
+
+            faqItems.forEach(item => {
+                const questionBtn = item.querySelector('.faq-question');
+                const iconSpan = item.querySelector('.faq-icon');
+
+                if (questionBtn) {
+                    questionBtn.addEventListener('click', function(e) {
+                        e.stopPropagation();
+
+                        if (item.classList.contains('active')) {
+                            item.classList.remove('active');
+                            questionBtn.setAttribute('aria-expanded', 'false');
+                            if (iconSpan) iconSpan.textContent = '+';
+                            return;
+                        }
+
+                        closeAllExcept(item);
+
+                        item.classList.add('active');
+                        questionBtn.setAttribute('aria-expanded', 'true');
+                        if (iconSpan) iconSpan.textContent = '−';
+                    });
+                }
+            });
+        });
     </script>
 </body>
 </html>
