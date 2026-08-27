@@ -395,13 +395,40 @@
     @media (max-width: 768px) {
       .hero-content h1 { font-size: 32px; }
       .contact-phone { font-size: 32px; }
-      .floating-call { display: block; }
       .trust-items { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; text-align: center; }
       .services-grid { grid-template-columns: 1fr; }
       .container { padding: 0 16px; }
       .phone-btn { padding: 8px 18px; font-size: 14px; }
       .btn-primary { width: 100%; text-align: center; }
+      
+      /* Fix grid layouts for mobile */
+      .overview-section > .container > div,
+      .res-commercial > .container > div,
+      .common-problems > .container > div {
+        grid-template-columns: 1fr !important;
+      }
+      .who-we-help > .container > div {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      .process-section > .container > div {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+      
+      .section-header h2 { font-size: 30px; }
+      .contact-box { padding: 30px 20px; }
+      .hero-card { padding: 24px; }
+      
+      /* FLOATING BUTTON - SHOW ON MOBILE & CENTERED */
+      .floating-call {
+        display: block !important;
+        bottom: 20px;
+      }
+      .call-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 28px;
+      }
     }
     @media (max-width: 480px) {
       .trust-items { grid-template-columns: 1fr; }
@@ -515,8 +542,7 @@
     <div class="section-header">
       <h2>Complete Electrical Technicians <span>Florence, SC Overview</span></h2>
     </div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">
-      <div style="background: var(--dark); padding: 28px; border-radius: 24px; border: 1px solid var(--slate);">
+<div class="overview-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;">      <div style="background: var(--dark); padding: 28px; border-radius: 24px; border: 1px solid var(--slate);">
         <h3 style="color: var(--primary);">What Do Electrical Technicians Do?</h3>
         <p style="margin-top: 12px;">Electrical technicians and electricians work with electrical systems, equipment, wiring, fixtures, and related components. The type of work they perform depends on their qualifications, licensing, experience, and the requirements of the project.</p>
         <p style="margin-top: 12px;">A customer searching for <strong>electrical technicians Florence, SC</strong> may be looking for help with anything from a simple electrical issue to a larger installation or upgrade.</p>
@@ -539,8 +565,7 @@
 <!-- residential & commercial sections 6 & 7 -->
 <section class="res-commercial" style="padding: 80px 0;">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
-      <div style="background: var(--dark-card); padding: 32px; border-radius: 24px; border: 1px solid var(--slate);">
+<div class="res-commercial-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">      <div style="background: var(--dark-card); padding: 32px; border-radius: 24px; border: 1px solid var(--slate);">
         <h2 style="font-size: 28px; color: var(--white);">Residential <span style="color: var(--primary);">Services</span></h2>
         <p style="margin-top: 16px;">Homeowners in Florence may need electrical assistance for a wide range of projects.</p>
         <ul style="margin-top: 16px; list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
@@ -571,8 +596,7 @@
 <!-- common problems & fast action sections 8 & 9 -->
 <section class="common-problems" style="padding: 80px 0; background: var(--dark-card);">
   <div class="container">
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
-      <div>
+<div class="common-problems-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">      <div>
         <h2 style="font-size: 28px; color: var(--white);">Common <span style="color: var(--primary);">Electrical Problems</span></h2>
         <ul style="margin-top: 16px; list-style: none; display: grid; gap: 8px;">
           <li>⚡ Flickering lights</li>
@@ -598,8 +622,7 @@
 <section class="who-we-help" style="padding: 80px 0;">
   <div class="container">
     <div class="section-header"><h2>Who We <span>Help</span></h2><p>Our connection service may help people looking for electrical assistance in Florence, SC.</p></div>
-    <div style="display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; text-align: center;">
-      <div style="background: var(--dark-card); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 40px;">🏠</span><h4 style="margin: 12px 0;">Homeowners</h4><p>Repairs, upgrades, lighting</p></div>
+<div class="who-we-help-grid" style="display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; text-align: center;">      <div style="background: var(--dark-card); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 40px;">🏠</span><h4 style="margin: 12px 0;">Homeowners</h4><p>Repairs, upgrades, lighting</p></div>
       <div style="background: var(--dark-card); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 40px;">🏢</span><h4 style="margin: 12px 0;">Businesses</h4><p>Commercial electrical needs</p></div>
       <div style="background: var(--dark-card); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 40px;">📋</span><h4 style="margin: 12px 0;">Property Managers</h4><p>Coordination for properties</p></div>
       <div style="background: var(--dark-card); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 40px;">🔑</span><h4 style="margin: 12px 0;">Landlords</h4><p>Rental property maintenance</p></div>
@@ -612,8 +635,7 @@
 <section class="process-section" style="padding: 80px 0; background: var(--dark-card);">
   <div class="container">
     <div class="section-header"><h2>Our Simple <span>Process</span></h2></div>
-    <div style="display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; text-align: center;">
-      <div style="background: var(--dark); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 36px; color: var(--primary);">1</span><h4 style="margin: 12px 0;">Contact Us</h4><p>Call and explain the electrical service you need.</p></div>
+<div class="process-grid" style="display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; text-align: center;">      <div style="background: var(--dark); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 36px; color: var(--primary);">1</span><h4 style="margin: 12px 0;">Contact Us</h4><p>Call and explain the electrical service you need.</p></div>
       <div style="background: var(--dark); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 36px; color: var(--primary);">2</span><h4 style="margin: 12px 0;">Get Connected</h4><p>Based on availability, connected with a local pro.</p></div>
       <div style="background: var(--dark); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 36px; color: var(--primary);">3</span><h4 style="margin: 12px 0;">Discuss Your Needs</h4><p>Talk about project, pricing, qualifications.</p></div>
       <div style="background: var(--dark); padding: 28px; border-radius: 20px; border: 1px solid var(--slate);"><span style="font-size: 36px; color: var(--primary);">4</span><h4 style="margin: 12px 0;">Schedule Service</h4><p>Arrange service directly with the provider.</p></div>
