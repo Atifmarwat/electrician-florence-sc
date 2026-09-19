@@ -588,7 +588,8 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="#" class="logo">
+                <!-- Logo -->
+                <a href="/" class="logo">
                     <div class="logo-icon">
                         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
@@ -599,6 +600,46 @@
                         <span>Florence, South Carolina</span>
                     </div>
                 </a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <line x1="3" y1="12" x2="21" y2="12"/>
+                        <line x1="3" y1="18" x2="21" y2="18"/>
+                    </svg>
+                </button>
+
+                <!-- Navigation Menu -->
+                <nav class="header-nav" id="headerNav">
+                    <a href="/">Home</a>
+
+                    <!-- Services Dropdown -->
+                    <div class="nav-dropdown">
+                        <a href="#services" class="dropdown-toggle">
+                            Services
+                            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#services">Emergency Electrical</a>
+                            <a href="#services">Major/Minor Repairs</a>
+                            <a href="#services">Panel Upgrades</a>
+                            <a href="#services">Lighting Installation</a>
+                            <a href="#services">Residential Wiring</a>
+                            <a href="#services">Commercial Electric</a>
+                            <a href="#services">Generator Installation</a>
+                            <a href="#services">EV Charger Install</a>
+                            <a href="#services">Electrical Inspections</a>
+                        </div>
+                    </div>
+
+                    <a href="#areas">Areas</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+
+                <!-- Phone Button -->
                 <div class="header-phone">
                     <a href="tel:+18436284022" class="phone-btn">
                         📞 +1 (843)6284-022
