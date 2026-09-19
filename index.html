@@ -27,7 +27,7 @@
     
      <style>
 
-                 /* ============================================ */
+            /* ============================================ */
         /* HEADER NAVIGATION + DROPDOWN */
         /* ============================================ */
         .header-nav {
@@ -60,7 +60,6 @@
         .nav-dropdown { position: relative; }
         .dropdown-toggle {
             color: var(--deep-navy);
-            text-decoration: none;
             font-weight: 600;
             font-size: 15px;
             text-transform: uppercase;
@@ -71,6 +70,7 @@
             padding: 6px 0;
             cursor: pointer;
             transition: color 0.3s ease;
+            user-select: none;
         }
         .dropdown-toggle:hover { color: var(--primary); }
         .dropdown-arrow {
@@ -84,7 +84,7 @@
             top: 100%; left: 50%;
             transform: translateX(-50%) translateY(10px);
             background: var(--white);
-            min-width: 260px;
+            min-width: 280px;
             border-radius: 14px;
             padding: 12px 0;
             box-shadow: 0 20px 50px -12px rgba(12, 74, 110, 0.25);
@@ -762,7 +762,7 @@
         </div>
     </div>
 
-    <!-- Header -->
+      <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -794,22 +794,19 @@
 
                     <!-- Services Dropdown -->
                     <div class="nav-dropdown">
-                        <a href="#services" class="dropdown-toggle">
+                        <span class="dropdown-toggle">
                             Services
                             <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
                                 <polyline points="6 9 12 15 18 9"/>
                             </svg>
-                        </a>
+                        </span>
                         <div class="dropdown-menu">
-                            <a href="#services">Emergency Electrical</a>
-                            <a href="#services">Major/Minor Repairs</a>
-                            <a href="#services">Panel Upgrades</a>
-                            <a href="#services">Lighting Installation</a>
-                            <a href="#services">Residential Wiring</a>
-                            <a href="#services">Commercial Electric</a>
-                            <a href="#services">Generator Installation</a>
-                            <a href="#services">EV Charger Install</a>
-                            <a href="#services">Electrical Inspections</a>
+                            <a href="https://24hourelectricianflorencesc.com/emergency-electrician-florence-sc.html">Emergency Electrician</a>
+                            <a href="https://24hourelectricianflorencesc.com/lighting-electrician-florence.html">Lighting Electrician</a>
+                            <a href="https://24hourelectricianflorencesc.com/electrical-installation-florence.html">Electrical Installation</a>
+                            <a href="https://24hourelectricianflorencesc.com/general-electrician-florence-sc">General Electrician Services</a>
+                            <a href="https://24hourelectricianflorencesc.com/commercial-electrician-florence-sc">Commercial Electrician</a>
+                            <a href="https://24hourelectricianflorencesc.com/electrical-technicians-florence-sc">Electrical Technicians</a>
                         </div>
                     </div>
 
