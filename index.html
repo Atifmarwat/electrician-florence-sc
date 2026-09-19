@@ -1255,6 +1255,51 @@ Fire in an electrical line is very dangerous and can cause massive destruction a
     </div>
 
     <script>
+
+                // ============================================
+        // HEADER MENU + DROPDOWN TOGGLE
+        // ============================================
+        (function() {
+            const menuBtn = document.getElementById('mobileMenuBtn');
+            const headerNav = document.getElementById('headerNav');
+            const dropdown = document.querySelector('.nav-dropdown');
+            const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+            if (menuBtn && headerNav) {
+                menuBtn.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    headerNav.classList.toggle('active');
+                });
+            }
+
+            if (dropdownToggle && dropdown) {
+                dropdownToggle.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 900) {
+                        e.preventDefault();
+                        dropdown.classList.toggle('open');
+                    }
+                });
+            }
+
+            document.querySelectorAll('.dropdown-menu a, .header-nav > a').forEach(link => {
+                link.addEventListener('click', function() {
+                    if (window.innerWidth <= 900 && headerNav) {
+                        headerNav.classList.remove('active');
+                        if (dropdown) dropdown.classList.remove('open');
+                    }
+                });
+            });
+
+            document.addEventListener('click', function(e) {
+                if (window.innerWidth <= 900) {
+                    if (headerNav && !headerNav.contains(e.target) && 
+                        menuBtn && !menuBtn.contains(e.target)) {
+                        headerNav.classList.remove('active');
+                        if (dropdown) dropdown.classList.remove('open');
+                    }
+                }
+            });
+        })();
         // Floating call button functionality - opens dialer on click
         // Phone number: 18436284022
         (function() {
