@@ -6,26 +6,131 @@
     <title>Electrical Installation Florence, Sc - Call Now</title>
     <meta name="description" content="Electrical Installation Florence, SC – Fast, safe & reliable same-day service. Licensed electricians for panel upgrades, wiring, lighting & emergency repairs. Free inspection!">
     <meta name="keywords" content="electrical installation Florence SC, electrician Florence SC, panel upgrade Florence, wiring installation, licensed electrician">
-<link rel="canonical" href="https://24hourelectricianflorencesc.com/electrical-installation-florence">    
-    <!-- Open Graph -->
+    <link rel="canonical" href="https://24hourelectricianflorencesc.com/electrical-installation-florence">
     <meta property="og:title" content="Electrical Installation Florence, SC – Fast, Safe & Reliable">
     <meta property="og:description" content="Same-day electrical installation, panel upgrades, wiring & emergency repairs. Licensed & insured. Free inspection!">
     <meta property="og:type" content="website">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
-                /* ============================================ */
-        /* HEADER NAVIGATION + DROPDOWN */
-        /* ============================================ */
-        .header-nav {
-            display: flex;
-            align-items: center;
-            gap: 28px;
+        :root {
+            --primary: #0EA5E9;
+            --primary-dark: #0284C7;
+            --primary-light: #7DD3FC;
+            --trust-green: #10B981;
+            --trust-green-dark: #059669;
+            --deep-navy: #0C4A6E;
+            --soft-navy: #075985;
+            --cream: #F0F9FF;
+            --white: #FFFFFF;
+            --text-dark: #0F172A;
+            --text-muted: #475569;
+            --accent-red: #EF4444;
+            --accent-amber: #F59E0B;
+            --dark: #0C4A6E;
+            --dark-card: #F0F9FF;
+            --slate: #E0F2FE;
+            --muted: #64748B;
+            --gradient-trust: linear-gradient(135deg, #0EA5E9 0%, #10B981 100%);
+            --gradient-hero: linear-gradient(135deg, #0C4A6E 0%, #075985 60%, #0EA5E9 100%);
+            --shadow-soft: 0 10px 30px rgba(14, 165, 233, 0.15);
+            --shadow-strong: 0 25px 50px -12px rgba(12, 74, 110, 0.35);
+            --shadow-glow: 0 0 40px rgba(14, 165, 233, 0.35);
         }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--cream);
+            color: var(--text-dark);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Top Bar */
+        .top-bar {
+            background: var(--trust-green);
+            color: var(--white);
+            padding: 10px 0;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+            animation: pulse-bg 3s ease-in-out infinite;
+        }
+        .top-bar a { color: var(--white); text-decoration: none; }
+        @keyframes pulse-bg {
+            0%, 100% { background: var(--trust-green); }
+            50% { background: var(--trust-green-dark); }
+        }
+
+        /* Header */
+        header {
+            background: var(--white);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(12, 74, 110, 0.1);
+        }
+        .header-content {
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 15px;
+        }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-icon {
+            width: 52px; height: 52px;
+            background: var(--gradient-trust);
+            border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: var(--shadow-glow);
+        }
+        .logo-icon svg { width: 30px; height: 30px; fill: var(--white); }
+        .logo-text .logo-title {
+            font-family: 'Oswald', sans-serif;
+            font-size: 22px; font-weight: 700;
+            color: var(--deep-navy); line-height: 1.1; text-transform: uppercase;
+        }
+        .logo-text span {
+            font-size: 12px; color: var(--primary);
+            font-weight: 600; letter-spacing: 0.05em; display: block;
+        }
+        .phone-btn {
+            background: var(--gradient-trust);
+            color: var(--white);
+            padding: 14px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700; font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            display: flex; align-items: center; gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+            animation: phone-pulse 2s infinite;
+        }
+        @keyframes phone-pulse {
+            0%,100%{transform:scale(1);} 50%{transform:scale(1.02);}
+        }
+        .phone-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 60px rgba(14, 165, 233, 0.5);
+        }
+
+        /* Header Nav */
+        .header-nav { display: flex; align-items: center; gap: 28px; }
         .header-nav > a {
             color: var(--deep-navy);
             text-decoration: none;
@@ -64,10 +169,7 @@
             user-select: none;
         }
         .dropdown-toggle:hover { color: var(--primary); }
-        .dropdown-arrow {
-            width: 14px; height: 14px;
-            transition: transform 0.3s ease;
-        }
+        .dropdown-arrow { width: 14px; height: 14px; transition: transform 0.3s ease; }
         .nav-dropdown:hover .dropdown-arrow { transform: rotate(180deg); }
 
         .dropdown-menu {
@@ -127,10 +229,418 @@
         }
         .mobile-menu-btn svg { width: 28px; height: 28px; }
 
-        /* Header Responsive */
+        /* Hero */
+        .hero {
+            background: var(--gradient-hero);
+            padding: 90px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%; right: -20%;
+            width: 700px; height: 700px;
+            background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+            animation: float 8s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%,100%{transform:translateY(0) rotate(0deg);}
+            50%{transform:translateY(-30px) rotate(5deg);}
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 60px; align-items: center;
+            position: relative; z-index: 1;
+        }
+        .hero-content h1 {
+            font-size: 46px; line-height: 1.15;
+            margin-bottom: 22px; color: var(--white);
+        }
+        .hero-content p {
+            font-size: 17px; color: #E0F2FE;
+            margin-bottom: 18px; max-width: 620px;
+        }
+        .hero-content p strong { color: var(--white); }
+        .badge-group {
+            display: flex; flex-wrap: wrap; gap: 12px; margin: 25px 0 30px;
+        }
+        .badge {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.35);
+            padding: 10px 18px; border-radius: 30px;
+            font-size: 13px; font-weight: 600;
+            color: var(--white);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .btn-primary {
+            background: var(--white);
+            color: var(--deep-navy);
+            padding: 18px 40px; border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700; font-size: 17px;
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase; letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255,255,255,0.35);
+        }
+        .hero-visual { position: relative; }
+        .hero-card {
+            background: var(--white);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: var(--shadow-strong);
+        }
+        .status { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }
+        .status strong { color: var(--trust-green-dark); }
+        .hero-card h3 { font-size: 26px; margin-bottom: 15px; color: var(--deep-navy); }
+        .hero-card p { color: var(--text-muted); margin-bottom: 25px; }
+        .response-time {
+            display: flex; align-items: center; gap: 15px;
+            background: var(--cream);
+            padding: 18px 22px; border-radius: 14px;
+            margin-bottom: 20px;
+            border-left: 4px solid var(--primary);
+        }
+        .response-time div:first-child {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700; color: var(--primary);
+            font-size: 32px;
+            line-height: 1;
+        }
+        .response-time div:last-child {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        /* Trust Bar */
+        .trust-bar {
+            background: var(--white);
+            padding: 50px 0;
+            border-bottom: 1px solid #E0F2FE;
+        }
+        .trust-items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px; text-align: center;
+        }
+        .trust-item { padding: 20px; }
+        .trust-item span { display: block; margin-bottom: 10px; }
+        .trust-item h4 { font-size: 17px; color: var(--deep-navy); margin-bottom: 8px; }
+        .trust-item p { font-size: 13px; color: var(--text-muted); }
+
+        section { padding: 100px 0; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 42px; color: var(--deep-navy); margin-bottom: 15px; }
+        .section-header h2 span { color: var(--primary); }
+        .section-header p { font-size: 17px; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
+
+        /* Services */
+        .services { background: var(--cream); }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+        .service-card {
+            background: var(--white);
+            border: 1px solid #E0F2FE;
+            border-radius: 18px;
+            padding: 35px 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+        .service-card::before {
+            content: '';
+            position: absolute; top: 0; left: 0; right: 0; height: 4px;
+            background: var(--gradient-trust);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary-light);
+            box-shadow: 0 20px 40px rgba(14,165,233,0.15);
+        }
+        .service-card:hover::before { transform: scaleX(1); }
+        .service-icon {
+            width: 60px; height: 60px;
+            background: linear-gradient(135deg, #E0F2FE, #D1FAE5);
+            border-radius: 14px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 28px; margin-bottom: 20px;
+        }
+        .service-card h3 { font-size: 19px; color: var(--deep-navy); margin-bottom: 12px; line-height: 1.3; }
+        .service-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; flex-grow: 1; }
+        .service-card p a,
+        .service-card .learn-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 12px;
+        }
+        .service-card .learn-more:hover,
+        .service-card p a:hover { text-decoration: underline; }
+
+        /* Process Steps */
+        .process-steps {
+            background: linear-gradient(180deg, #F0F9FF 0%, #ECFDF5 100%);
+            padding: 100px 0;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .step-card {
+            background: var(--white);
+            border: 1px solid #E0F2FE;
+            border-radius: 18px;
+            padding: 40px 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        .step-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(14,165,233,0.15);
+        }
+        .step-number {
+            width: 70px; height: 70px;
+            margin: 0 auto 20px;
+            background: var(--gradient-trust);
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 32px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            color: var(--white);
+            box-shadow: var(--shadow-glow);
+        }
+        .step-card h3 { font-size: 20px; color: var(--deep-navy); margin-bottom: 12px; }
+        .step-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
+
+        /* Warning Section */
+        .warning-section {
+            background: linear-gradient(135deg, #0C4A6E 0%, #075985 100%);
+            padding: 100px 0;
+        }
+        .warning-section h2 { color: var(--white); margin-bottom: 20px; }
+        .warning-section h2 span { color: var(--accent-amber); }
+        .warning-section p { color: #E0F2FE; font-size: 16px; margin-bottom: 20px; }
+        .warning-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+        .risk-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            gap: 12px;
+        }
+        .risk-list li {
+            background: rgba(255,255,255,0.08);
+            border-left: 4px solid var(--accent-amber);
+            padding: 14px 20px;
+            border-radius: 10px;
+            color: #E0F2FE;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+        .risk-list li strong { color: var(--white); }
+        .warning-grid a.btn-primary {
+            background: var(--white);
+            color: var(--deep-navy);
+        }
+
+        /* Areas */
+        .service-areas { background: var(--cream); padding: 100px 0; }
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .area-item {
+            background: var(--white);
+            border: 1px solid #E0F2FE;
+            border-radius: 12px;
+            padding: 18px 22px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
+            font-weight: 600;
+            color: var(--deep-navy);
+            font-size: 15px;
+        }
+        .area-item:hover {
+            border-color: var(--primary);
+            background: #F0F9FF;
+            transform: translateY(-3px);
+        }
+
+        /* Testimonials */
+        .testimonials { background: var(--cream); padding: 100px 0; }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .testimonial-card {
+            background: var(--white);
+            border: 1px solid var(--slate);
+            border-radius: 18px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px; left: 20px;
+            font-size: 60px;
+            font-family: 'Oswald', sans-serif;
+            color: var(--primary-light);
+            line-height: 1;
+            opacity: 0.5;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--trust-green);
+            box-shadow: 0 20px 40px rgba(16,185,129,0.15);
+        }
+        .testimonial-card p { color: var(--text-muted); font-style: italic; line-height: 1.7; position: relative; z-index: 1; margin-top: 20px; }
+        .testimonial-card h4 { color: var(--deep-navy); font-size: 15px; }
+
+        /* Contact */
+        .contact-section { background: linear-gradient(180deg, #F0F9FF 0%, #E0F2FE 100%); padding: 100px 0; }
+        .contact-box {
+            background: var(--white);
+            border: 2px solid var(--primary-light);
+            border-radius: 28px;
+            padding: 60px;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(14,165,233,0.25);
+            max-width: 900px; margin: 0 auto;
+        }
+        .contact-box h2 { font-size: 40px; color: var(--deep-navy); margin-bottom: 15px; line-height: 1.2; }
+        .contact-box p { font-size: 17px; color: var(--text-muted); margin-bottom: 25px; }
+        .contact-phone {
+            font-size: 46px;
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 25px;
+            transition: all 0.3s ease;
+        }
+        .contact-phone:hover {
+            color: var(--trust-green-dark);
+            text-shadow: 0 0 30px rgba(16,185,129,0.35);
+        }
+        .contact-features {
+            display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .contact-feature {
+            display: flex; align-items: center; gap: 8px;
+            color: var(--text-dark); font-weight: 600;
+            font-size: 15px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--deep-navy);
+            color: #CBD5E1;
+            padding: 70px 0 30px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px; margin-bottom: 40px;
+        }
+        .footer-brand h3 { font-size: 22px; color: var(--white); margin-bottom: 15px; }
+        .footer-brand p { color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 20px; }
+        .footer-phone { color: var(--primary-light); text-decoration: none; font-weight: 600; }
+        .footer-phone:hover { color: var(--white); }
+        .footer-column h4 {
+            font-size: 16px; color: var(--primary-light);
+            margin-bottom: 20px; letter-spacing: 0.05em;
+        }
+        .footer-column ul { list-style: none; }
+        .footer-column ul li { margin-bottom: 10px; font-size: 15px; }
+        .footer-column ul li a {
+            color: #94A3B8; text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-column ul li a:hover { color: var(--white); }
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex; justify-content: space-between; align-items: center;
+            flex-wrap: wrap; gap: 15px;
+        }
+        .footer-bottom p { color: #64748B; font-size: 14px; }
+
+        /* Floating Call Button */
+        .floating-call {
+            position: fixed;
+            bottom: 30px; left: 50%;
+            transform: translateX(-50%);
+            z-index: 9999;
+            display: none;
+        }
+        .floating-call .call-btn {
+            display: flex; align-items: center; justify-content: center;
+            width: 70px; height: 70px;
+            background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
+            border-radius: 50%;
+            text-decoration: none;
+            color: var(--white);
+            font-size: 32px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 0 0 0 rgba(239,68,68,0.7);
+            animation: call-ripple 1.5s infinite;
+            transition: all 0.3s ease;
+        }
+        .floating-call .call-btn:active { transform: scale(0.92); }
+        @keyframes call-ripple {
+            0% { box-shadow: 0 0 0 0 rgba(239,68,68,0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(239,68,68,0); }
+            100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+        }
+        @media (max-width: 768px) { .floating-call { display: block; } }
+        @media (min-width: 769px) { .floating-call { display: none; } }
+
+        /* Responsive */
         @media (max-width: 1024px) {
             .header-nav { gap: 20px; }
             .header-nav > a, .dropdown-toggle { font-size: 14px; }
+            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+            .hero-content h1 { font-size: 38px; }
+            .services-grid { grid-template-columns: repeat(2, 1fr); }
+            .steps-grid { grid-template-columns: repeat(2, 1fr); }
+            .areas-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-grid { grid-template-columns: repeat(2, 1fr); }
+            .testimonial-grid { grid-template-columns: 1fr; }
+            .warning-grid { grid-template-columns: 1fr; gap: 30px; }
         }
         @media (max-width: 900px) {
             .mobile-menu-btn { display: block; }
@@ -194,628 +704,103 @@
         }
         @media (max-width: 768px) {
             header { position: relative !important; top: auto !important; }
-       
-        :root {
-            --primary: #0EA5E9;
-            --primary-dark: #0284C7;
-            --primary-light: #7DD3FC;
-            --trust-green: #10B981;
-            --trust-green-dark: #059669;
-            --deep-navy: #0C4A6E;
-            --soft-navy: #075985;
-            --cream: #F0F9FF;
-            --white: #FFFFFF;
-            --text-dark: #0F172A;
-            --text-muted: #475569;
-            --accent-red: #EF4444;
-            --gradient-trust: linear-gradient(135deg, #0EA5E9 0%, #10B981 100%);
-            --gradient-hero: linear-gradient(135deg, #0C4A6E 0%, #075985 60%, #0EA5E9 100%);
-            --shadow-soft: 0 10px 30px rgba(14, 165, 233, 0.15);
-            --shadow-strong: 0 25px 50px -12px rgba(12, 74, 110, 0.35);
-            --shadow-glow: 0 0 40px rgba(14, 165, 233, 0.35);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        html { scroll-behavior: smooth; }
-
-        body {
-            font-family: 'Source Sans 3', sans-serif;
-            background: var(--cream);
-            color: var(--text-dark);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        h1, h2, h3, h4, h5 {
-            font-family: 'Oswald', sans-serif;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.02em;
-        }
-
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-
-        .top-bar {
-            background: var(--trust-green);
-            color: var(--white);
-            padding: 10px 0;
-            text-align: center;
-            font-weight: 600;
-            font-size: 14px;
-            animation: pulse-bg 3s ease-in-out infinite;
-        }
-        @keyframes pulse-bg {
-            0%, 100% { background: var(--trust-green); }
-            50% { background: var(--trust-green-dark); }
-        }
-        .top-bar .emergency-text { display: inline-flex; align-items: center; gap: 8px; }
-        .top-bar .blink { animation: blink 1s infinite; }
-        @keyframes blink { 0%,50%,100%{opacity:1;} 25%,75%{opacity:.3;} }
-
-        header {
-            background: var(--white);
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(12, 74, 110, 0.1);
-        }
-        .header-content {
-            display: flex; justify-content: space-between; align-items: center;
-            flex-wrap: wrap; gap: 15px;
-        }
-        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-        .logo-icon {
-            width: 52px; height: 52px;
-            background: var(--gradient-trust);
-            border-radius: 14px;
-            display: flex; align-items: center; justify-content: center;
-            box-shadow: var(--shadow-glow);
-        }
-        .logo-icon svg { width: 30px; height: 30px; fill: var(--white); }
-        .logo-text .logo-title {
-            font-family: 'Oswald', sans-serif;
-            font-size: 22px; font-weight: 700;
-            color: var(--deep-navy); line-height: 1.1; text-transform: uppercase;
-        }
-        .logo-text span {
-            font-size: 12px; color: var(--primary);
-            font-weight: 600; letter-spacing: 0.05em; display: block;
-        }
-        .phone-btn {
-            background: var(--gradient-trust);
-            color: var(--white);
-            padding: 14px 30px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 700; font-size: 18px;
-            font-family: 'Oswald', sans-serif;
-            display: flex; align-items: center; gap: 10px;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-soft);
-            animation: phone-pulse 2s infinite;
-        }
-        @keyframes phone-pulse {
-            0%,100%{transform:scale(1);} 50%{transform:scale(1.02);}
-        }
-        .phone-btn:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 60px rgba(14, 165, 233, 0.5);
-        }
-
-        .hero {
-            background: var(--gradient-hero);
-            padding: 90px 0;
-            position: relative;
-            overflow: hidden;
-        }
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: -50%; right: -20%;
-            width: 700px; height: 700px;
-            background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
-            animation: float 8s ease-in-out infinite;
-        }
-        @keyframes float {
-            0%,100%{transform:translateY(0) rotate(0deg);}
-            50%{transform:translateY(-30px) rotate(5deg);}
-        }
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: 60px; align-items: center;
-            position: relative; z-index: 1;
-        }
-        .hero-content h1 {
-            font-size: 48px; line-height: 1.15;
-            margin-bottom: 22px; color: var(--white);
-        }
-        .hero-content h1 span { color: var(--primary-light); display: block; }
-        .hero-content p {
-            font-size: 18px; color: #E0F2FE;
-            margin-bottom: 30px; max-width: 540px;
-        }
-        .hero-badges { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 35px; }
-        .badge {
-            background: rgba(255,255,255,0.12);
-            border: 1px solid rgba(255,255,255,0.35);
-            padding: 10px 18px; border-radius: 30px;
-            font-size: 14px; font-weight: 600;
-            color: var(--white);
-            display: flex; align-items: center; gap: 8px;
-            backdrop-filter: blur(4px);
-        }
-        .hero-cta { display: flex; flex-wrap: wrap; gap: 15px; }
-        .btn-primary {
-            background: var(--white);
-            color: var(--deep-navy);
-            padding: 18px 40px; border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700; font-size: 18px;
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase; letter-spacing: 0.05em;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-soft);
-            display: inline-block;
-        }
-        .btn-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(255,255,255,0.35);
-        }
-        .btn-secondary {
-            background: transparent; color: var(--white);
-            padding: 18px 40px; border-radius: 12px;
-            font-weight: 600; font-size: 16px;
-            border: 2px solid rgba(255,255,255,0.5);
-            display: inline-block; text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        .btn-secondary:hover {
-            border-color: var(--white);
-            background: rgba(255,255,255,0.1);
-        }
-        .hero-visual { position: relative; }
-        .hero-card {
-            background: var(--white);
-            border-radius: 24px;
-            padding: 40px;
-            box-shadow: var(--shadow-strong);
-        }
-        .hero-card-header {
-            display: flex; align-items: center; gap: 15px;
-            margin-bottom: 25px; padding-bottom: 25px;
-            border-bottom: 1px solid #E0F2FE;
-        }
-        .status-dot {
-            width: 12px; height: 12px;
-            background: var(--trust-green);
-            border-radius: 50%;
-            animation: pulse 2s infinite;
-        }
-        @keyframes pulse {
-            0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.4);}
-            50%{box-shadow:0 0 0 10px rgba(16,185,129,0);}
-        }
-        .hero-card-header span { font-weight: 700; color: var(--trust-green-dark); }
-        .hero-card h3 { font-size: 26px; margin-bottom: 15px; color: var(--deep-navy); }
-        .hero-card p { color: var(--text-muted); margin-bottom: 25px; }
-        .response-time {
-            display: flex; align-items: center; gap: 15px;
-            background: var(--cream);
-            padding: 18px 22px; border-radius: 14px;
-            margin-bottom: 20px;
-            border-left: 4px solid var(--primary);
-        }
-        .response-time .time {
-            font-size: 38px;
-            font-family: 'Oswald', sans-serif;
-            font-weight: 700; color: var(--primary); line-height: 1;
-        }
-        .response-time .label { font-size: 14px; color: var(--text-muted); line-height: 1.3; }
-
-        .trust-bar {
-            background: var(--white);
-            padding: 50px 0;
-            border-bottom: 1px solid #E0F2FE;
-        }
-        .trust-items {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px; text-align: center;
-        }
-        .trust-item { padding: 20px; }
-        .trust-item .icon {
-            width: 60px; height: 60px;
-            margin: 0 auto 15px;
-            background: linear-gradient(135deg, #E0F2FE, #D1FAE5);
-            border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 28px;
-        }
-        .trust-item h4 { font-size: 18px; color: var(--deep-navy); margin-bottom: 8px; }
-        .trust-item p { font-size: 14px; color: var(--text-muted); }
-
-        section { padding: 100px 0; }
-        .section-header { text-align: center; margin-bottom: 60px; }
-        .section-header h2 { font-size: 42px; color: var(--deep-navy); margin-bottom: 15px; }
-        .section-header h2 span { color: var(--primary); }
-        .section-header p { font-size: 18px; color: var(--text-muted); max-width: 640px; margin: 0 auto; }
-
-        .services { background: var(--cream); }
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-        .service-card {
-            background: var(--white);
-            border: 1px solid #E0F2FE;
-            border-radius: 18px;
-            padding: 35px 30px;
-            transition: all 0.4s ease;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
-        }
-        .service-card::before {
-            content: '';
-            position: absolute; top: 0; left: 0; right: 0; height: 4px;
-            background: var(--gradient-trust);
-            transform: scaleX(0);
-            transition: transform 0.4s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-8px);
-            border-color: var(--primary-light);
-            box-shadow: 0 20px 40px rgba(14,165,233,0.15);
-        }
-        .service-card:hover::before { transform: scaleX(1); }
-        .service-icon {
-            width: 60px; height: 60px;
-            background: linear-gradient(135deg, #E0F2FE, #D1FAE5);
-            border-radius: 14px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 28px; margin-bottom: 20px;
-        }
-        .service-card h3 { font-size: 20px; color: var(--deep-navy); margin-bottom: 12px; }
-        .service-card p { font-size: 15px; color: var(--text-muted); line-height: 1.6; }
-        .service-card p a { color: var(--primary); text-decoration: none; font-weight: 600; }
-        .service-card p a:hover { text-decoration: underline; }
-
-        .why-florence {
-            background: linear-gradient(180deg, #F0F9FF 0%, #ECFDF5 100%);
-            position: relative; overflow: hidden;
-        }
-        .why-florence-header { text-align: center; margin-bottom: 60px; }
-        .why-florence-header h2 { font-size: 38px; color: var(--deep-navy); margin-bottom: 20px; line-height: 1.2; }
-        .why-florence-header h2 .highlight { color: var(--trust-green-dark); }
-        .why-florence-header p { font-size: 18px; color: var(--text-muted); max-width: 700px; margin: 0 auto; }
-        .why-florence-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-        .why-florence-card {
-            background: var(--white);
-            border: 1px solid #E0F2FE;
-            border-radius: 18px;
-            padding: 35px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
-        }
-        .why-florence-card:hover {
-            border-color: var(--trust-green);
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(16,185,129,0.15);
-        }
-        .why-florence-card .card-icon {
-            width: 60px; height: 60px;
-            background: linear-gradient(135deg, #E0F2FE, #D1FAE5);
-            border-radius: 14px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 28px; margin-bottom: 20px;
-        }
-        .why-florence-card h3 { font-size: 20px; color: var(--deep-navy); margin-bottom: 12px; }
-        .why-florence-card p { font-size: 15px; color: var(--text-muted); line-height: 1.7; }
-        .why-florence-cta { text-align: center; margin-top: 50px; }
-        .why-florence-cta .btn-primary { background: var(--gradient-trust); color: var(--white); }
-
-        .emergency-section {
-            background: linear-gradient(135deg, #0C4A6E 0%, #0EA5E9 100%);
-            padding: 60px 0;
-            position: relative; overflow: hidden;
-        }
-        .emergency-section::before {
-            content: '⚡';
-            position: absolute; right: 10%; top: 50%;
-            transform: translateY(-50%);
-            font-size: 200px; opacity: 0.08;
-        }
-        .emergency-content {
-            display: flex; justify-content: space-between; align-items: center;
-            flex-wrap: wrap; gap: 30px;
-            position: relative; z-index: 1;
-        }
-        .emergency-text h2 { font-size: 38px; color: var(--white); margin-bottom: 10px; }
-        .emergency-text p { font-size: 18px; color: #E0F2FE; }
-        .btn-emergency {
-            background: var(--white); color: var(--deep-navy);
-            padding: 20px 45px; border-radius: 12px;
-            text-decoration: none;
-            font-weight: 700; font-size: 20px;
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            display: inline-flex; align-items: center; gap: 12px;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        .btn-emergency:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
-        }
-
-        .service-areas { background: var(--cream); }
-        .areas-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-        }
-        .area-item {
-            background: var(--white);
-            border: 1px solid #E0F2FE;
-            border-radius: 12px;
-            padding: 20px 25px;
-            text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
-        }
-        .area-item:hover {
-            border-color: var(--primary);
-            background: #F0F9FF;
-            transform: translateY(-3px);
-        }
-        .area-item span { font-weight: 600; color: var(--deep-navy); }
-
-        .why-us { background: linear-gradient(180deg, #ECFDF5 0%, #F0F9FF 100%); }
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-        .why-card {
-            background: var(--white);
-            border: 1px solid #E0F2FE;
-            border-radius: 18px;
-            padding: 35px;
-            display: flex; gap: 25px;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(12,74,110,0.05);
-        }
-        .why-card:hover {
-            border-color: var(--trust-green);
-            transform: translateX(5px);
-            box-shadow: 0 20px 40px rgba(16,185,129,0.15);
-        }
-        .why-icon {
-            width: 70px; height: 70px;
-            background: linear-gradient(135deg, #E0F2FE, #D1FAE5);
-            border-radius: 16px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 32px; flex-shrink: 0;
-        }
-        .why-content h3 { font-size: 22px; color: var(--deep-navy); margin-bottom: 10px; }
-        .why-content p { color: var(--text-muted); font-size: 15px; line-height: 1.7; }
-
-        .contact-section { background: linear-gradient(180deg, #F0F9FF 0%, #E0F2FE 100%); }
-        .contact-box {
-            background: var(--white);
-            border: 2px solid var(--primary-light);
-            border-radius: 28px;
-            padding: 60px;
-            text-align: center;
-            box-shadow: 0 25px 50px -12px rgba(14,165,233,0.25);
-            max-width: 820px; margin: 0 auto;
-        }
-        .contact-box h2 { font-size: 42px; color: var(--deep-navy); margin-bottom: 15px; }
-        .contact-box p { font-size: 18px; color: var(--text-muted); margin-bottom: 35px; }
-        .contact-phone {
-            font-size: 48px;
-            font-family: 'Oswald', sans-serif;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            display: inline-block;
-            margin-bottom: 30px;
-            transition: all 0.3s ease;
-        }
-        .contact-phone:hover {
-            color: var(--trust-green-dark);
-            text-shadow: 0 0 30px rgba(16,185,129,0.35);
-        }
-        .contact-features {
-            display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;
-        }
-        .contact-feature {
-            display: flex; align-items: center; gap: 10px;
-            color: var(--text-muted); font-weight: 600;
-        }
-        .contact-feature span { color: var(--trust-green); font-weight: 700; }
-
-        footer {
-            background: var(--deep-navy);
-            color: #CBD5E1;
-            padding: 70px 0 30px;
-        }
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px; margin-bottom: 40px;
-        }
-        .footer-brand h3 { font-size: 24px; color: var(--white); margin-bottom: 15px; }
-        .footer-brand p { color: #94A3B8; font-size: 15px; line-height: 1.7; margin-bottom: 20px; }
-        .footer-phone { color: var(--primary-light); text-decoration: none; font-weight: 600; }
-        .footer-phone:hover { color: var(--white); }
-        .footer-column h4 {
-            font-size: 16px; color: var(--primary-light);
-            margin-bottom: 20px; letter-spacing: 0.05em;
-        }
-        .footer-column ul { list-style: none; }
-        .footer-column ul li { margin-bottom: 10px; font-size: 15px; }
-        .footer-column ul li a {
-            color: #94A3B8; text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .footer-column ul li a:hover { color: var(--white); }
-        .footer-bottom {
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            display: flex; justify-content: space-between; align-items: center;
-            flex-wrap: wrap; gap: 15px;
-        }
-        .footer-bottom p { color: #64748B; font-size: 14px; }
-
-        .floating-call-center {
-            position: fixed;
-            bottom: 30px; left: 50%;
-            transform: translateX(-50%);
-            z-index: 9999;
-            display: none;
-        }
-        .call-center-btn {
-            display: flex; align-items: center; justify-content: center;
-            width: 70px; height: 70px;
-            background: linear-gradient(135deg, #EF4444 0%, #DC2626 100%);
-            border-radius: 50%;
-            border: none; cursor: pointer;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 0 0 0 rgba(239,68,68,0.7);
-            animation: call-ripple 1.5s infinite;
-            transition: all 0.3s ease;
-        }
-        .call-center-btn:active { transform: scale(0.92); }
-        .call-center-btn .call-icon { font-size: 36px; font-style: normal; }
-        @keyframes call-ripple {
-            0% { box-shadow: 0 0 0 0 rgba(239,68,68,0.7); }
-            70% { box-shadow: 0 0 0 20px rgba(239,68,68,0); }
-            100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
-        }
-        @media (max-width: 768px) { .floating-call-center { display: block; } }
-        @media (min-width: 769px) { .floating-call-center { display: none; } }
-
-        @media (max-width: 1024px) {
-            .hero-grid { grid-template-columns: 1fr; gap: 40px; }
-            .hero-content h1 { font-size: 40px; }
-            .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .areas-grid { grid-template-columns: repeat(3, 1fr); }
-            .footer-grid { grid-template-columns: repeat(2, 1fr); }
-            .why-florence-grid { grid-template-columns: 1fr; }
-        }
-        @media (max-width: 768px) {
             .header-content { justify-content: center; text-align: center; }
-            .hero-content h1 { font-size: 32px; }
+            .hero-content h1 { font-size: 30px; }
             .trust-items { grid-template-columns: repeat(2, 1fr); }
             .services-grid { grid-template-columns: 1fr; }
-            .why-grid { grid-template-columns: 1fr; }
+            .steps-grid { grid-template-columns: 1fr; }
             .areas-grid { grid-template-columns: repeat(2, 1fr); }
-            .emergency-content { text-align: center; justify-content: center; }
             .contact-box { padding: 40px 25px; }
-            .contact-phone { font-size: 32px; }
+            .contact-phone { font-size: 30px; }
             .footer-grid { grid-template-columns: 1fr; text-align: center; }
             .footer-bottom { justify-content: center; text-align: center; }
-            .why-florence-header h2 { font-size: 28px; }
-            .section-header h2 { font-size: 30px; }
+            .section-header h2 { font-size: 28px; }
+            .phone-btn { font-size: 15px; padding: 12px 20px; }
+            .warning-section h2 { font-size: 24px !important; }
         }
         @media (max-width: 480px) {
-            .phone-btn { padding: 10px 20px; font-size: 15px; }
+            .phone-btn { padding: 10px 16px; font-size: 13px; }
             .hero { padding: 50px 0; }
-            .hero-content h1 { font-size: 26px; }
-            .btn-primary, .btn-secondary { width: 100%; text-align: center; }
+            .hero-content h1 { font-size: 24px; }
+            .btn-primary { width: 100%; text-align: center; padding: 15px 20px; font-size: 15px; }
             .areas-grid { grid-template-columns: 1fr; }
             .contact-features { flex-direction: column; gap: 15px; }
-            .call-center-btn { width: 60px; height: 60px; }
-            .call-center-btn .call-icon { font-size: 30px; }
+            .floating-call .call-btn { width: 60px; height: 60px; font-size: 26px; }
             .contact-phone { font-size: 26px; }
         }
-
     </style>
 </head>
 <body>
 
+<!-- Top Bar -->
 <div class="top-bar">
     <div class="container">
         ⚡ Electrical Installation Florence, SC – Same-Day Service Available. Call Now: <a href="tel:+18436284022"><strong>+1 (843) 628-4022</strong></a> ⚡
     </div>
 </div>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <!-- Logo -->
-                <a href="/" class="logo">
-                    <div class="logo-icon">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                        </svg>
-                    </div>
-                    <div class="logo-text">
-                        <div class="logo-title">24 Hour Electrician</div>
-                        <span>Florence, South Carolina</span>
-                    </div>
-                </a>
-
-                <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                        <line x1="3" y1="6" x2="21" y2="6"/>
-                        <line x1="3" y1="12" x2="21" y2="12"/>
-                        <line x1="3" y1="18" x2="21" y2="18"/>
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="header-content">
+            <a href="/" class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                     </svg>
-                </button>
-
-                <!-- Navigation Menu -->
-                <nav class="header-nav" id="headerNav">
-                    <a href="/">Home</a>
-
-                    <!-- Services Dropdown -->
-                    <div class="nav-dropdown">
-                        <span class="dropdown-toggle">
-                            Services
-                            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
-                                <polyline points="6 9 12 15 18 9"/>
-                            </svg>
-                        </span>
-                        <div class="dropdown-menu">
-                            <a href="https://24hourelectricianflorencesc.com/emergency-electrician-florence-sc.html">Emergency Electrician</a>
-                            <a href="https://24hourelectricianflorencesc.com/lighting-electrician-florence.html">Lighting Electrician</a>
-                            <a href="https://24hourelectricianflorencesc.com/electrical-installation-florence.html">Electrical Installation</a>
-                            <a href="https://24hourelectricianflorencesc.com/general-electrician-florence-sc">General Electrician Services</a>
-                            <a href="https://24hourelectricianflorencesc.com/commercial-electrician-florence-sc">Commercial Electrician</a>
-                            <a href="https://24hourelectricianflorencesc.com/electrical-technicians-florence-sc">Electrical Technicians</a>
-                        </div>
-                    </div>
-
-                    <a href="#areas">Areas</a>
-                    <a href="#contact">Contact</a>
-                </nav>
-
-                <!-- Phone Button -->
-                <div class="header-phone">
-                    <a href="tel:+18436284022" class="phone-btn">
-                        📞 +1 (843)6284-022
-                    </a>
                 </div>
+                <div class="logo-text">
+                    <div class="logo-title">24 Hour Electrician</div>
+                    <span>Florence, South Carolina</span>
+                </div>
+            </a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6"/>
+                    <line x1="3" y1="12" x2="21" y2="12"/>
+                    <line x1="3" y1="18" x2="21" y2="18"/>
+                </svg>
+            </button>
+
+            <nav class="header-nav" id="headerNav">
+                <a href="/">Home</a>
+                <div class="nav-dropdown">
+                    <span class="dropdown-toggle">
+                        Services
+                        <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </span>
+                    <div class="dropdown-menu">
+                        <a href="https://24hourelectricianflorencesc.com/emergency-electrician-florence-sc.html">Emergency Electrician</a>
+                        <a href="https://24hourelectricianflorencesc.com/lighting-electrician-florence.html">Lighting Electrician</a>
+                        <a href="https://24hourelectricianflorencesc.com/electrical-installation-florence.html">Electrical Installation</a>
+                        <a href="https://24hourelectricianflorencesc.com/general-electrician-florence-sc">General Electrician Services</a>
+                        <a href="https://24hourelectricianflorencesc.com/commercial-electrician-florence-sc">Commercial Electrician</a>
+                        <a href="https://24hourelectricianflorencesc.com/electrical-technicians-florence-sc">Electrical Technicians</a>
+                    </div>
+                </div>
+                <a href="#areas">Areas</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-phone">
+                <a href="tel:+18436284022" class="phone-btn">
+                    📞 +1 (843)6284-022
+                </a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero">
     <div class="container">
         <div class="hero-grid">
             <div class="hero-content">
                 <h1>Electrical Installation Florence, SC – Call Now</h1>
-                <p>If you are looking for electrical installations in Florence, SC, then you should consider getting in touch with an expert company. Be it your new electrical panel installation, light installation, wiring of outlets, or total rewiring of your building, we have it all sorted out..</p>
+                <p>If you are looking for electrical installations in Florence, SC, then you should consider getting in touch with an expert company. Be it your new electrical panel installation, light installation, wiring of outlets, or total rewiring of your building, we have it all sorted out.</p>
                 <div class="badge-group">
                     <div class="badge">✅ Licensed & Insured</div>
                     <div class="badge">⭐ 5-Star Rated</div>
@@ -826,14 +811,14 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-card">
-                    <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px;">
+                    <div class="status">
                         <span style="width:12px;height:12px;background:#10B981;border-radius:50%;display:inline-block;"></span>
                         <strong>Available Now – Florence & Surrounding Areas</strong>
                     </div>
-                    <h3 style="font-size:28px;">Panel Upgrades & Rewiring</h3>
+                    <h3>Panel Upgrades & Rewiring</h3>
                     <p>Faulty wiring, overloaded circuits, or outdated systems can become fire hazards. We restore safety immediately.</p>
                     <div class="response-time">
-                        <div style="font-size:38px;font-weight:800;color:#F97316;">Same-Day</div>
+                        <div>Same-Day</div>
                         <div>Service Guarantee • Free Estimate</div>
                     </div>
                 </div>
@@ -854,8 +839,7 @@
     </div>
 </section>
 
-<!-- Electrical Installation Services Detailed -->
-<!-- Services Section -->
+<!-- Services -->
 <section class="services" id="services">
     <div class="container">
         <div class="section-header">
@@ -864,152 +848,113 @@
         </div>
 
         <div class="services-grid">
-
-            <!-- Existing Service 1 -->
             <div class="service-card">
                 <div class="service-icon">🔧</div>
                 <h3>Residential Electrical Repairs</h3>
                 <p>Help with common electrical problems involving outlets, switches, wiring, breakers, lighting, and other home electrical components.</p>
             </div>
-
-            <!-- Existing Service 2 -->
             <div class="service-card">
                 <div class="service-icon">🏠</div>
                 <h3>Home Electrical Repair</h3>
                 <p>Assistance with electrical issues affecting individual rooms, appliances, fixtures, or other parts of a residential electrical system.</p>
             </div>
-
-            <!-- Existing Service 3 -->
             <div class="service-card">
                 <div class="service-icon">📊</div>
                 <h3>Electrical Panel Services</h3>
                 <p>A professional may inspect or service electrical panels when homeowners experience breaker problems or other panel-related concerns.</p>
             </div>
-
-            <!-- Existing Service 4 -->
             <div class="service-card">
                 <div class="service-icon">⚡</div>
                 <h3>Circuit Breaker Services</h3>
                 <p>Possible assistance with frequently tripping breakers, breaker replacement, or electrical troubleshooting.</p>
             </div>
-
-            <!-- Existing Service 5 -->
             <div class="service-card">
                 <div class="service-icon">🔌</div>
                 <h3>Residential Wiring Services</h3>
                 <p>Wiring professionals may assist with new wiring, damaged wiring, remodeling projects, and other residential electrical needs.</p>
             </div>
-
-            <!-- Existing Service 6 -->
             <div class="service-card">
                 <div class="service-icon">💡</div>
                 <h3>Lighting Services</h3>
                 <p>Help may be available for indoor lighting, outdoor lighting, fixtures, switches, and related electrical connections.</p>
             </div>
-
-            <!-- Existing Service 7 -->
             <div class="service-card">
                 <div class="service-icon">🌀</div>
                 <h3>Ceiling Fan Services</h3>
                 <p>Some providers may install, replace, troubleshoot, or repair ceiling fan electrical connections.</p>
             </div>
-
-            <!-- Existing Service 8 -->
             <div class="service-card">
                 <div class="service-icon">⚙️</div>
                 <h3>Residential Electrical Installation</h3>
                 <p>Electrical installation may be available for new fixtures, outlets, switches, lighting, wiring, and other residential projects.</p>
             </div>
 
-
-            <!-- New Service 9 -->
             <div class="service-card">
                 <div class="service-icon">🏠</div>
                 <h3>Residential Electrical Company</h3>
                 <p>Independent professionals may provide residential electrical services in Florence, SC, including home repairs, wiring, installations, outlets, lighting, and electrical upgrades.</p>
-                <a href="https://24hourelectricianflorencesc.com/residential-electrical-company-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/residential-electrical-company-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 10 -->
             <div class="service-card">
                 <div class="service-icon">🔌</div>
                 <h3>Electrical Outlet Repair</h3>
                 <p>Help may be available for electrical outlet problems, including damaged outlets, loose connections, faulty receptacles, and other common outlet concerns.</p>
-                <a href="https://24hourelectricianflorencesc.com/electrical-outlet-repair-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/electrical-outlet-repair-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 11 -->
             <div class="service-card">
                 <div class="service-icon">🛠️</div>
                 <h3>Electrical Repair Service Company</h3>
                 <p>Electrical repair professionals may assist with residential and commercial electrical issues involving wiring, circuits, outlets, lighting, and other electrical components.</p>
-                <a href="https://24hourelectricianflorencesc.com/electrical-repair-service-company-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/electrical-repair-service-company-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 12 -->
             <div class="service-card">
                 <div class="service-icon">⚡</div>
                 <h3>Electrical Repairs</h3>
                 <p>Electrical repair assistance may be available for common problems involving wiring, switches, outlets, breakers, lighting, and other electrical systems.</p>
-                <a href="https://24hourelectricianflorencesc.com/electrical-repairs-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/electrical-repairs-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 13 -->
             <div class="service-card">
                 <div class="service-icon">🚨</div>
                 <h3>Emergency Electrical Service</h3>
                 <p>Some independent professionals may offer help with urgent electrical concerns such as electrical faults, power problems, damaged wiring, or other safety-related issues.</p>
-                <a href="https://24hourelectricianflorencesc.com/emergency-electrical-service-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/emergency-electrical-service-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 14 -->
             <div class="service-card">
                 <div class="service-icon">👷</div>
                 <h3>Electrical Contractors</h3>
                 <p>Electrical contractors may assist with residential and commercial electrical projects, including installations, repairs, wiring, upgrades, and other electrical work.</p>
-                <a href="https://24hourelectricianflorencesc.com/electrical-contractors-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/electrical-contractors-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 15 -->
             <div class="service-card">
                 <div class="service-icon">🔧</div>
                 <h3>Electrical Technicians</h3>
                 <p>Electrical technicians may provide assistance with troubleshooting, repairs, wiring, installations, maintenance, and other electrical service needs.</p>
-                <a href="https://24hourelectricianflorencesc.com/electrical-technicians-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/electrical-technicians-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 16 -->
             <div class="service-card">
                 <div class="service-icon">🏢</div>
                 <h3>Commercial Electrician</h3>
                 <p>Commercial electrical professionals may help businesses with wiring, lighting, electrical repairs, installations, upgrades, and other commercial property needs.</p>
-                <a href="https://24hourelectricianflorencesc.com/commercial-electrician-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/commercial-electrician-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 17 -->
             <div class="service-card">
                 <div class="service-icon">⚡</div>
                 <h3>General Electrician</h3>
                 <p>General electrical services may include troubleshooting, repairs, wiring, installations, lighting, outlets, switches, and other common electrical needs.</p>
-                <a href="https://24hourelectricianflorencesc.com/general-electrician-florence-sc" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/general-electrician-florence-sc" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 18 -->
             <div class="service-card">
                 <div class="service-icon">🔨</div>
                 <h3>Electrical Installation</h3>
                 <p>Electrical installation professionals may assist with new wiring, outlets, switches, fixtures, lighting systems, and other residential or commercial electrical installations.</p>
-                <a href="https://24hourelectricianflorencesc.com/electrical-installation-florence" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/electrical-installation-florence" class="learn-more">Learn More →</a>
             </div>
-
-            <!-- New Service 19 -->
             <div class="service-card">
                 <div class="service-icon">💡</div>
                 <h3>Lighting Electrician</h3>
                 <p>Lighting electricians may help with indoor and outdoor lighting, fixture installation, lighting repairs, switches, and related electrical connections.</p>
-                <a href="https://24hourelectricianflorencesc.com/lighting-electrician-florence" class="learn-more">Learn More</a>
+                <a href="https://24hourelectricianflorencesc.com/lighting-electrician-florence" class="learn-more">Learn More →</a>
             </div>
-
         </div>
 
         <p style="text-align: center; margin-top: 40px; color: var(--text-muted); font-size: 16px; font-style: italic;">
@@ -1018,7 +963,7 @@
     </div>
 </section>
 
-<!-- 3-Step Process -->
+<!-- Process Steps -->
 <section class="process-steps">
     <div class="container">
         <div class="section-header">
@@ -1026,9 +971,21 @@
             <p>We make electrical installation easy, fast, and transparent.</p>
         </div>
         <div class="steps-grid">
-            <div class="step-card"><div class="step-number">1</div><h3>Full Inspection</h3><p>Check breaker panels, wiring, outlets, load capacity & safety risks to identify issues.</p></div>
-            <div class="step-card"><div class="step-number">2</div><h3>Professional Installation</h3><p>Panel upgrades, wiring, lighting, GFCI – high-quality materials & code compliance.</p></div>
-            <div class="step-card"><div class="step-number">3</div><h3>Long-Term Protection</h3><p>Prevent overloads, future failures, fire risks – built to last.</p></div>
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Full Inspection</h3>
+                <p>Check breaker panels, wiring, outlets, load capacity & safety risks to identify issues.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Professional Installation</h3>
+                <p>Panel upgrades, wiring, lighting, GFCI – high-quality materials & code compliance.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Long-Term Protection</h3>
+                <p>Prevent overloads, future failures, fire risks – built to last.</p>
+            </div>
         </div>
     </div>
 </section>
@@ -1038,7 +995,7 @@
     <div class="container">
         <div class="warning-grid">
             <div>
-                <h2 style="font-size:32px;">Electrical Problems <span style="color:#F97316;">Can Quickly Become Dangerous</span></h2>
+                <h2 style="font-size:32px;">Electrical Problems <span style="color:#FBBF24;">Can Quickly Become Dangerous</span></h2>
                 <p>Flickering lights, warm outlets, buzzing sounds – often warning signs of larger issues. Ignoring them leads to serious risks.</p>
                 <ul class="risk-list">
                     <li>🔥 <strong>Electrical fires</strong> caused by faulty wiring</li>
@@ -1049,7 +1006,7 @@
                 </ul>
             </div>
             <div>
-                <h2 style="font-size:32px;">Signs You Need <span style="color:#F97316;">Installation Services</span></h2>
+                <h2 style="font-size:32px;">Signs You Need <span style="color:#FBBF24;">Installation Services</span></h2>
                 <ul class="risk-list">
                     <li>⚡ Flickering / dimming lights</li>
                     <li>⚡ Frequent tripping breakers</li>
@@ -1058,188 +1015,157 @@
                     <li>⚡ Burning smell near electrical panels</li>
                     <li>⚡ Old wiring (aluminum / cloth)</li>
                 </ul>
-                <div style="margin-top:30px;"><a href="tel:+18436284022" class="btn-primary" style="padding:14px 32px;">🚨 Call Now – Free Inspection</a></div>
+                <div style="margin-top:30px;">
+                    <a href="tel:+18436284022" class="btn-primary" style="padding:14px 32px;">🚨 Call Now – Free Inspection</a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Service Areas -->
-<section class="trust-bar" style="background:var(--dark);">
+<!-- Areas We Serve -->
+<section class="trust-bar" style="background:var(--deep-navy);">
     <div class="container">
-        <div class="section-header"><h2>Areas We Serve <span>Near Florence, SC</span></h2><p>Local service means faster response times</p></div>
+        <div class="section-header">
+            <h2 style="color: var(--white);">Areas We Serve <span>Near Florence, SC</span></h2>
+            <p style="color: #E0F2FE;">Local service means faster response times</p>
+        </div>
         <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:15px; margin-top:20px;">
-            <span class="badge">Florence, SC</span><span class="badge">Darlington</span><span class="badge">Quinby</span>
-            <span class="badge">Timmonsville</span><span class="badge">Effingham</span><span class="badge">Woodland Park</span>
-            <span class="badge">Florence County</span><span class="badge">Lake City</span><span class="badge">Hartsville</span>
+            <span class="badge">Florence, SC</span>
+            <span class="badge">Darlington</span>
+            <span class="badge">Quinby</span>
+            <span class="badge">Timmonsville</span>
+            <span class="badge">Effingham</span>
+            <span class="badge">Woodland Park</span>
+            <span class="badge">Florence County</span>
+            <span class="badge">Lake City</span>
+            <span class="badge">Hartsville</span>
         </div>
     </div>
 </section>
-    <!-- Zip Code Areas -->
-    <section class="service-areas">
-        <div class="container">
-            <div class="section-header">
-                <h2>Electrician Services by <span>Florence ZIP Code</span></h2>
-                <p> We provide 24-hour electrician and emergency electrical services throughout
-    Florence, SC. The ZIP codes below represent some of the Florence areas we serve.</p>
-            </div>
-            
-            <div class="areas-grid">
-                <div class="area-item"><span>29501</span></div>
-                <div class="area-item"><span>29505</span></div>
-                <div class="area-item"><span>29506</span></div>
-                <div class="area-item"><span>29503</span></div>
-        
-            </div>
+
+<!-- Zip Code Areas -->
+<section class="service-areas" id="areas">
+    <div class="container">
+        <div class="section-header">
+            <h2>Electrician Services by <span>Florence ZIP Code</span></h2>
+            <p>We provide 24-hour electrician and emergency electrical services throughout Florence, SC. The ZIP codes below represent some of the Florence areas we serve.</p>
         </div>
-    </section>
+        
+        <div class="areas-grid">
+            <div class="area-item"><span>29501</span></div>
+            <div class="area-item"><span>29505</span></div>
+            <div class="area-item"><span>29506</span></div>
+            <div class="area-item"><span>29503</span></div>
+        </div>
+    </div>
+</section>
 
 <!-- Testimonials -->
 <section class="testimonials">
     <div class="container">
-        <div class="section-header"><h2>What Our <span>Customers Say</span></h2><p>Real reviews from Florence homeowners & businesses</p></div>
+        <div class="section-header">
+            <h2>What Our <span>Customers Say</span></h2>
+            <p>Real reviews from Florence homeowners & businesses</p>
+        </div>
         <div class="testimonial-grid">
-            <div class="testimonial-card"><p>“They installed a new electrical panel the same day we called. Very professional and fast service.”</p><h4 style="margin-top:15px;">— Sarah M., Florence, SC</h4></div>
-            <div class="testimonial-card"><p>“Our office lights and outlets were installed perfectly. Clean work and fair pricing.”</p><h4 style="margin-top:15px;">— James T., Florence</h4></div>
-            <div class="testimonial-card"><p>“We had frequent breaker issues for months. Their electrician fixed everything in one visit.”</p><h4 style="margin-top:15px;">— Mark R., Florence County</h4></div>
+            <div class="testimonial-card">
+                <p>"They installed a new electrical panel the same day we called. Very professional and fast service."</p>
+                <h4 style="margin-top:15px;">— Sarah M., Florence, SC</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Our office lights and outlets were installed perfectly. Clean work and fair pricing."</p>
+                <h4 style="margin-top:15px;">— James T., Florence</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"We had frequent breaker issues for months. Their electrician fixed everything in one visit."</p>
+                <h4 style="margin-top:15px;">— Mark R., Florence County</h4>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Final Contact CTA -->
-<section class="contact-section">
+<!-- Contact -->
+<section class="contact-section" id="contact">
     <div class="container">
         <div class="contact-box">
-            <h2 style="font-size:36px;">Schedule Your <span style="color:#F97316;">Free Electrical Inspection</span> Electrical Installation Florence, Sc
-</h2>
+            <h2>Schedule Your <span style="color: var(--primary);">Free Electrical Inspection</span> – Electrical Installation Florence, Sc</h2>
             <p>Don't wait until a small electrical issue turns into a major emergency. Protect your property, family, and peace of mind.</p>
             <a href="tel:+18436284022" class="contact-phone">+1 (843) 628-4022</a>
-            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
-                <span>✅ Free Estimates</span>
-                <span>✅ Same-Day Service</span>
-                <span>✅ Licensed & Insured</span>
-                <span>✅ Upfront Pricing</span>
+            <div class="contact-features">
+                <div class="contact-feature">✅ Free Estimates</div>
+                <div class="contact-feature">✅ Same-Day Service</div>
+                <div class="contact-feature">✅ Licensed & Insured</div>
+                <div class="contact-feature">✅ Upfront Pricing</div>
             </div>
-            <p style="margin-top:25px;"><strong>Safe, affordable, and professional electrical solutions – just one call away.</strong></p>
+            <p style="margin-top:25px; font-weight: 600;"><strong>Safe, affordable, and professional electrical solutions – just one call away.</strong></p>
         </div>
     </div>
 </section>
 
- <!-- Footer -->
-       <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>24 Hour Electrician Florence</h3>
-                    <p>Your trusted local electrician serving Florence, SC and the Pee Dee region. Licensed, insured, and committed to providing exceptional electrical services 24 hours a day, 7 days a week.</p>
-                    <p><strong>Call:</strong> <a href="tel:+18436284022" class="footer-phone">+1 (843)6284-022</a></p>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="https://24hourelectricianflorencesc.com/electrical-technicians-florence-sc" target="_blank">Electrical Technicians</a></li>
-                        <li><a href="https://24hourelectricianflorencesc.com/commercial-electrician-florence-sc" target="_blank">Commercial Electrician</a></li>
-                        <li>Panel Upgrades</li>
-                        <li><a href="https://24hourelectricianflorencesc.com/general-electrician-florence-sc" target="_blank">General Electrician Services</a></li>
-
-                        <li><a href="https://24hourelectricianflorencesc.com/electrical-installation-florence.html" target="_blank">Electrical Installation</a></li>
-
-<li><a href="https://24hourelectricianflorencesc.com/lighting-electrician-florence.html" target="_blank">Lighting Installation</a></li>
-                        <li>Generator Install</li>
-                        <li>EV Chargers</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Service Areas</h4>
-                    <ul>
-                        <li>Florence, SC</li>
-                        <li>Darlington, SC</li>
-                        <li>Hartsville, SC</li>
-                        <li>Marion, SC</li>
-                        <li>Lake City, SC</li>
-                        <li>Timmonsville, SC</li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li><a href="tel:+18436284022" class="footer-phone">+1 (843)6284-022</a></li>
-                        <li>Florence, SC 29501</li>
-                    </ul>
-                    <h4 style="margin-top: 20px;">Hours</h4>
-                    <ul>
-                        <li>24/7/365</li>
-                        <li>Always Available</li>
-                    </ul>
-                </div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>24 Hour Electrician Florence</h3>
+                <p>Your trusted local electrician serving Florence, SC and the Pee Dee region. Licensed, insured, and committed to providing exceptional electrical services 24 hours a day, 7 days a week.</p>
+                <p><strong>Call:</strong> <a href="tel:+18436284022" class="footer-phone">+1 (843)6284-022</a></p>
             </div>
             
-            <div class="footer-bottom">
-                <p>&copy; 2026 24hourelectricianflorence.com | All Rights Reserved</p>
-                <p>Licensed Electrician | Florence, SC 29501</p>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="https://24hourelectricianflorencesc.com/electrical-technicians-florence-sc" target="_blank">Electrical Technicians</a></li>
+                    <li><a href="https://24hourelectricianflorencesc.com/commercial-electrician-florence-sc" target="_blank">Commercial Electrician</a></li>
+                    <li>Panel Upgrades</li>
+                    <li><a href="https://24hourelectricianflorencesc.com/general-electrician-florence-sc" target="_blank">General Electrician Services</a></li>
+                    <li><a href="https://24hourelectricianflorencesc.com/electrical-installation-florence.html" target="_blank">Electrical Installation</a></li>
+                    <li><a href="https://24hourelectricianflorencesc.com/lighting-electrician-florence.html" target="_blank">Lighting Installation</a></li>
+                    <li>Generator Install</li>
+                    <li>EV Chargers</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Service Areas</h4>
+                <ul>
+                    <li>Florence, SC</li>
+                    <li>Darlington, SC</li>
+                    <li>Hartsville, SC</li>
+                    <li>Marion, SC</li>
+                    <li>Lake City, SC</li>
+                    <li>Timmonsville, SC</li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+18436284022" class="footer-phone">+1 (843)6284-022</a></li>
+                    <li>Florence, SC 29501</li>
+                </ul>
+                <h4 style="margin-top: 20px;">Hours</h4>
+                <ul>
+                    <li>24/7/365</li>
+                    <li>Always Available</li>
+                </ul>
             </div>
         </div>
-    </footer>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 24hourelectricianflorence.com | All Rights Reserved</p>
+            <p>Licensed Electrician | Florence, SC 29501</p>
+        </div>
+    </div>
+</footer>
 
-
+<!-- Floating Call Button -->
 <div class="floating-call">
-    <a href="tel:+18436284022" class="call-btn" style="text-decoration:none;"><span style="font-size:32px;">📞</span></a>
+    <a href="tel:+18436284022" class="call-btn"><span>📞</span></a>
 </div>
 
-<script>
-
-            // ============================================
-        // HEADER MENU + DROPDOWN TOGGLE
-        // ============================================
-        (function() {
-            const menuBtn = document.getElementById('mobileMenuBtn');
-            const headerNav = document.getElementById('headerNav');
-            const dropdown = document.querySelector('.nav-dropdown');
-            const dropdownToggle = document.querySelector('.dropdown-toggle');
-
-            if (menuBtn && headerNav) {
-                menuBtn.addEventListener('click', function(e) {
-                    e.stopPropagation();
-                    headerNav.classList.toggle('active');
-                });
-            }
-
-            if (dropdownToggle && dropdown) {
-                dropdownToggle.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 900) {
-                        e.preventDefault();
-                        dropdown.classList.toggle('open');
-                    }
-                });
-            }
-
-            document.querySelectorAll('.dropdown-menu a, .header-nav > a').forEach(link => {
-                link.addEventListener('click', function() {
-                    if (window.innerWidth <= 900 && headerNav) {
-                        headerNav.classList.remove('active');
-                        if (dropdown) dropdown.classList.remove('open');
-                    }
-                });
-            });
-
-            document.addEventListener('click', function(e) {
-                if (window.innerWidth <= 900) {
-                    if (headerNav && !headerNav.contains(e.target) && 
-                        menuBtn && !menuBtn.contains(e.target)) {
-                        headerNav.classList.remove('active');
-                        if (dropdown) dropdown.classList.remove('open');
-                    }
-                }
-            });
-        })();
-    document.querySelector('.floating-call a')?.addEventListener('click', (e) => { e.preventDefault(); window.location.href = 'tel:+18436284022'; });
-</script>
-
-<!-- Schema Markup -->
+<!-- Schema -->
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
@@ -1263,6 +1189,51 @@
     }
 }
 </script>
+
+<!-- Scripts -->
+<script>
+    // Header Menu + Dropdown
+    (function() {
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        const headerNav = document.getElementById('headerNav');
+        const dropdown = document.querySelector('.nav-dropdown');
+        const dropdownToggle = document.querySelector('.dropdown-toggle');
+
+        if (menuBtn && headerNav) {
+            menuBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                headerNav.classList.toggle('active');
+            });
+        }
+
+        if (dropdownToggle && dropdown) {
+            dropdownToggle.addEventListener('click', function(e) {
+                if (window.innerWidth <= 900) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('open');
+                }
+            });
+        }
+
+        document.querySelectorAll('.dropdown-menu a, .header-nav > a').forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 900 && headerNav) {
+                    headerNav.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('open');
+                }
+            });
+        });
+
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 900) {
+                if (headerNav && !headerNav.contains(e.target) && 
+                    menuBtn && !menuBtn.contains(e.target)) {
+                    headerNav.classList.remove('active');
+                    if (dropdown) dropdown.classList.remove('open');
+                }
+            }
+        });
+    })();
+</script>
 </body>
 </html>
-
